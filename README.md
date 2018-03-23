@@ -2,19 +2,22 @@
 Basic repo which connects to a SQL Azure instance using Node.
 
 # Requirements
-1.  An Azure SQL database
+1.  SQL Server Resource
+    (tests were done at the Standard service tier with 10 DTUs (S0) with 1GB of storage.)
+    
+2.  An Azure SQL database
     (with a server-level firewall rule for the public IP address of the computer you use)
     
-2.  Node.js
+3.  Node.js
     (this example was done on Windows)
     
-3.  npm init -y
+4.  npm init -y
 
     npm install tedious
     
     npm install async
     
-4.  Run code
+5.  Run code
   (node <FILENAME>.js)
 
 # References
