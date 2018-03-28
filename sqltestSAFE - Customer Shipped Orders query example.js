@@ -39,6 +39,7 @@ function queryDatabase()
 				COALESCE(EmailAddress, Phone) AS PrimaryContact,
 				SalesOrderID, 
 				OrderDate,
+	     			ShipDate,
 				CASE WHEN ShipDate IS NULL THEN 'Pending'
 				ELSE 'Shipped'
 				END AS ShippingStatus
